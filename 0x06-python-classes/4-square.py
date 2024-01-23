@@ -15,12 +15,12 @@ class Square:
     def __init__(self, size=0):
         self.__size = size
 
-        @property
-        def size(self):
+    @property
+    def size(self):
 
-            return self.__size
+        return self.__size
 
-        @size.setter
+    @size.setter
     def size(self, value):
 
         if type(value) != int:
@@ -34,4 +34,4 @@ class Square:
         will be used to calculate the area of a
         square by using the power of two
         """
-    return self.__size ** 2
+        return self.__size ** 2
