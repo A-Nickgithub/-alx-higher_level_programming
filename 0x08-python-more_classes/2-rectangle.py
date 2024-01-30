@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+This is a module that creates a class
+which returns a perimeter and the area of
+rectangle
+"""
+
 
 class Rectangle:
     def __init__(self, width=0, height=0):
