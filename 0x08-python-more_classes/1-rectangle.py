@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+This module creates a class
+that defines a rectangle with
+private attributes
+"""
+
 
 class Rectangle:
     """Class representing a rectangle with width and height."""
