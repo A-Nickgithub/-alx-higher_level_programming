@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+A module containig a class rectangle that inherits from
+BaseGeometry
+which is defined in a file in the same directory
+"""
+
 
 class BaseGeometry:
     """Base class representing base geometry."""
