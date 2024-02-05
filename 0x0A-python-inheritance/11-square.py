@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+This module contains a class that inherits from the rectangle
+"""
+
 
 class BaseGeometry:
     """Base class representing base geometry."""
