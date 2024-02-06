@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This script defines a function to generate Pascal's triangle up to the nth row and another function to print the triangle.
+"""
 
 
 def pascal_triangle(n):
