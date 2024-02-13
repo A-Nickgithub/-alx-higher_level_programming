@@ -63,6 +63,32 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 setattr(self, key, value)
 
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """
+        Saves a list of Rectangle objects to a CSV file.
+        """
+        filename = cls.__name__ + ".csv"
+        with open(filename, "w") as file:
+            for rect in list_objs:
+                line = "{},{},{},{},{}\n".format(
+                        rect.id, rect.width, rect.height, rect.x, rect.y)
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """
+        Loads a list of Rectangle objects from a CSV file.
+        """
+        filename = cls.__name__ + ".csv"
+        rectangles = []
+        with open(filename, "r") as file:
+            for line in file:
+                data = line.strip().split(",")
+                id, width, height, x, y = map(int, data)
+                rectangle = cls(width, height, x, y, id)
+                rectangles.append(rectangle)
+        return rectangles
+
     @property
     def width(self):
         """Get width attribute."""
