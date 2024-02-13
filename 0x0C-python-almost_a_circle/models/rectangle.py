@@ -29,6 +29,21 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    def display(self):
+        """
+        display rectangle in the form of #
+        """
+        for _ in range(self.__y):
+            print()
+            for _ in range(self.__height):
+                print(" " * self.__x + "#" * self.__width)
+
+    def area(self):
+        """
+        calculate and return the area of the rectangle
+        """
+        return self.__width * self.__height
+
     @property
     def width(self):
         """Get width attribute."""
