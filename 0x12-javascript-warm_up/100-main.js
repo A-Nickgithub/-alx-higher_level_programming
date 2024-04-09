@@ -1,5 +1,7 @@
 #!/usr/bin/node
 
-myVar = 89;
-require('./100-let_me_const');
+const letMeConst = require('./100-let_me_const.js');
+
+letMeConst.modifyMyVar();
+
 console.log(myVar);

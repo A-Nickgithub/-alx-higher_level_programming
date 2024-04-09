@@ -1,1 +1,9 @@
-myVar = 333;
+#!/usr/bin/node
+
+myVar = 89;
+
+module.exports = {
+  modifyMyVar: function () {
+    myVar = 333;
+  }
+};
