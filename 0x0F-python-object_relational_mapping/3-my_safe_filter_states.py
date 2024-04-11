@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+This script is implemented so at to avoid
+sql injections
+"""
 import sys
 import MySQLdb
 
